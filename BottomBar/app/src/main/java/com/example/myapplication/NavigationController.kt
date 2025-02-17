@@ -2,6 +2,9 @@ package com.example.myapplication
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
+import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -74,6 +77,11 @@ fun BottomNavigationBar() {
             }
           )
         }
+      }
+    },
+    floatingActionButton = {
+      FloatingActionButton(onClick = {}) {
+        Icon(Icons.Filled.Add, contentDescription = "add icon")
       }
     }
   ) { paddingValues ->
