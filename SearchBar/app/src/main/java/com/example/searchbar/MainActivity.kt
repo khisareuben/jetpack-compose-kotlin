@@ -26,31 +26,18 @@ class MainActivity : ComponentActivity() {
         Surface(
           modifier = Modifier.fillMaxSize(),
           color = MaterialTheme.colorScheme.background
+
         ) {
           Box(
             modifier = Modifier.fillMaxSize(),
             contentAlignment = Alignment.TopCenter
-          ){
+          ) {
             SearchBar()
-        }
+          }
         }
       }
     }
   }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-  Text(
-    text = "Hello $name!",
-    modifier = modifier
-  )
-}
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-  SearchBarTheme {
-    Greeting("Android")
-  }
-}
