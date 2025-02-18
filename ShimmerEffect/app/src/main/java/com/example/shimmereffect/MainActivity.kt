@@ -17,11 +17,11 @@ import com.example.shimmereffect.ui.theme.ShimmerEffectTheme
 class MainActivity : ComponentActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    enableEdgeToEdge()
+    //enableEdgeToEdge()
     setContent {
       ShimmerEffectTheme {
         Column {
-          repeat(7){
+          repeat(8){
             AnimatedShimmer()
         }
         }
